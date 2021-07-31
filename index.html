@@ -1,0 +1,44 @@
+<div>
+	<form class="form" method="POST" action="/completed">
+		<label>
+			<span>Email</span>
+			<input type="text" name="email">		
+		</label>		
+		<label>
+			<span>Name</span>
+			<input type="text" name="name">		
+		</label>
+		<label>
+			<span>Message</span>
+		  <textarea name="message"></textarea>			
+		</label>
+	  <button type="submit">Send</button>
+	</form>
+</div>
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		height:  100vh;
+		display:  flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.form {
+		padding: 20px;
+		background-color: lightgray;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		width: 400px; 
+		margin: 0 auto;
+	}
+
+	label {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+</style>
